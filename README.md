@@ -23,10 +23,12 @@ I tested this project on Python 3.5, CUDA 9.0, cudnn 7.3.1 and other common pack
 I considered the following dataset lists.
 
 (1) Image to segementation
+
 https://bdd-data.berkeley.edu/
 https://research.mapillary.com/
 
 (2) Segementation to steer
+
 https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip
 https://drive.google.com/file/d/0B-KJCaaF7elleG1RbzVPZWV4Tlk/view
 
