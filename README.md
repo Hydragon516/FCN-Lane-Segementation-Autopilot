@@ -14,3 +14,5 @@ I tested this project on Python 3.5, CUDA 9.0, cudnn 7.3.1 and other common pack
 
 # Sample test
 ### Run  'steering_on_video.py'
+
+![test](./images/test1.gif)
