@@ -35,12 +35,12 @@ def road_lines(image):
     prediction2 = float(prediction2)
     print(prediction2)
 
-    wheel = cv2.imread('steering_wheel.jpg')
-    wheel = cv2.resize(wheel, dsize=(500, 335), interpolation=cv2.INTER_AREA)
+    wheel = cv2.imread('steering_wheel_image.jpg')
+    wheel = cv2.resize(wheel, dsize=(335, 335), interpolation=cv2.INTER_AREA)
 
-    M = cv2.getRotationMatrix2D((500 / 2, 335 / 2), -int(prediction2), 1)
+    M = cv2.getRotationMatrix2D((335 / 2, 335 / 2), -int(prediction2), 1)
 
-    wheel = cv2.warpAffine(wheel, M, (500, 335))
+    wheel = cv2.warpAffine(wheel, M, (335, 335))
 
     cv2.imshow('wheel', wheel)
 
@@ -55,7 +55,7 @@ def road_lines(image):
 
 lanes = Lanes()
 
-cap = cv2.VideoCapture('test_video/lane.mp4')
+cap = cv2.VideoCapture('test_video/video.mp4')
 
 while True:
     ret, frame = cap.read()
