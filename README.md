@@ -36,15 +36,15 @@ https://drive.google.com/file/d/0B-KJCaaF7elleG1RbzVPZWV4Tlk/view
 
 I provide some tools for image preprocessing.
 
-'image_resize.py' : Change image size to 180X60
-'mask_selector.py' : If your datasets have more than one label, select the color of the label.
-'segmentation_generator.py' : Create a segmentation of the image using the learned model. It is used to derive the steering value from the segmentation.
+`image_resize.py` : Change image size to 180X60
+`mask_selector.py` : If your datasets have more than one label, select the color of the label.
+`segmentation_generator.py` : Create a segmentation of the image using the learned model. It is used to derive the steering value from the segmentation.
 
 ### Training
 
 You can choose either train1 or train2 to learn. train2 is more advanced than train1. 
-'load_data_from_segmentation.py' and 'load_data_from_steer.py' are the process of making each data into a pickle file.
+`load_data_from_segmentation.py` and `load_data_from_steer.py` are the process of making each data into a pickle file.
 
 ### Other
 
-'segmentation_generate_and_get_steer-optical flow.py' of train2 can derive the steer value by optical flow when there is no information of the steer value of the image.
+`segmentation_generate_and_get_steer-optical flow.py` of train2 can derive the steer value by optical flow when there is no information of the steer value of the image.
